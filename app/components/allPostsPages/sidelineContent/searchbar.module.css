@@ -1,0 +1,13 @@
+.searchBar
+  :global(
+    div.MuiFormControl-root.MuiFormControl-fullWidth.MuiTextField-root.css-wb57ya-MuiFormControl-root-MuiTextField-root
+  ) {
+  width: 100%;
+}
+
+.searchBar
+  :global(
+    div.MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-colorPrimary.MuiInputBase-formControl.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root
+  ) {
+  border-radius: 50px;
+}
