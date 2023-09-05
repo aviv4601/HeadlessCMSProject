@@ -1,7 +1,6 @@
 import { getCategryByPostId, getPostBySlug } from "../../../lib/wordpress";
-import PostBody from "@/app/components/post-body";
-import PostHeader from "@/app/components/post-header";
-import Layout from "@/app/components/layout/layout";
+import PostBody from "@/app/components/allPostsPages/singlePostBySlug/post-body";
+import PostHeader from "@/app/components/allPostsPages/singlePostBySlug/post-header";
 
 export default async function PostPage({ params }) {
   const posts = await getPostBySlug(params.slug);
@@ -16,15 +15,13 @@ export default async function PostPage({ params }) {
   const categoryData = category.length > 0 ? category[0].name : "No Category";
 
   return (
-    <Layout>
-      <div className="container mx-auto px-5">
-        <div>
-          <PostHeader post={post} category={categoryData} />
-        </div>
-        <div>
-          <PostBody post={post} />
-        </div>
+    <div className="container mx-auto px-5">
+      <div>
+        <PostHeader post={post} category={categoryData} />
       </div>
-    </Layout>
+      <div>
+        <PostBody post={post} />
+      </div>
+    </div>
   );
 }
