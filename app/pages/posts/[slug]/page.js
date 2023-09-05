@@ -1,6 +1,6 @@
 import { getCategryByPostId, getPostBySlug } from "../../../lib/wordpress";
-import PostBody from "@/app/components/allPostsPages/singlePostBySlug/post-body";
-import PostHeader from "@/app/components/allPostsPages/singlePostBySlug/post-header";
+import PostBody from "@/app/components/singlePostBySlug/post-body";
+import PostHeader from "@/app/components/singlePostBySlug/post-header";
 
 export default async function PostPage({ params }) {
   const posts = await getPostBySlug(params.slug);
