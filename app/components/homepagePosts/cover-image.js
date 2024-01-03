@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import RandomImage from "../assets/RandomImage.jpg";
+import RandomImage from "../../assets/RandomImage.jpg";
 
 const CoverImage = ({ coverImage }) => {
   return (

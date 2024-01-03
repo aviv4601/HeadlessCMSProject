@@ -17,7 +17,7 @@ export default async function SortedByCategoryPage({ params }) {
 
   const allPosts = await getPosts();
   return (
-    <Layout>
+    <div>
       <div className="container mx-auto px-5 py-5 ">
         <h1 className="font-bold text-3xl">Category: {categoryData.name}</h1>
       </div>
@@ -29,6 +29,6 @@ export default async function SortedByCategoryPage({ params }) {
           <SidelineContent posts={allPosts} categories={categories} />
         </div>
       </div>
-    </Layout>
+    </div>
   );
 }

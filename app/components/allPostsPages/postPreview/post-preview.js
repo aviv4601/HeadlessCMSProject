@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import { convertingDate } from "@/app/utils/functions";
-import RandomImage from "@/app/assets/RandomImage.jpg";
-import ReadMoreBtn from "@/app/components/UI/read-more-btn";
+import { convertingDate } from "../../../utils/functions";
+import RandomImage from "../../../assets/RandomImage.jpg";
+import ReadMoreBtn from "../../UI/read-more-btn";
 
 const PostPreview = ({ post }) => {
   return (

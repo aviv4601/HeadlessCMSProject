@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { convertingDate } from "../../utils/functions";
 import Avatar from "../avatar";
-import CoverImage from "../cover-image";
+import CoverImage from "./cover-image";
 
 const HeroPost = ({ post }) => {
   const date = convertingDate(post.date);

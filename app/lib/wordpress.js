@@ -61,6 +61,23 @@ export async function getPosts() {
   }
 }
 
+// getting 4 posts each time
+export async function getPostsByPage(pageNumber) {
+  try {
+    const response = await axios.get(`${BASE_URL}posts`, {
+      params: {
+        _sort: "date",
+        per_page: 4,
+        _order: "desc",
+        page: pageNumber,
+      },
+    });
+    return await response.data;
+  } catch (error) {
+    console.error(error);
+    throw new Error("Failed to fetch posts data.");
+  }
+}
 // export async function getPostsTitlesForSearchField(searchTerm) {
 //   try {
 //     const response = await axios.get(
@@ -109,5 +126,16 @@ export async function getCategoryNameByCategoryId(categoryId) {
   } catch (error) {
     console.error(error);
     throw new Error("Failed to fetch category name by category id.");
+  }
+}
+
+export async function getCommentsByPostId(id) {
+  try {
+    const response = await axios.get(`${BASE_URL}comments?post=${id}`);
+    console.log("response", response.data);
+    return await response.data;
+  } catch (error) {
+    console.error(error);
+    throw new Error("Failed to fetch comments by post id.");
   }
 }
