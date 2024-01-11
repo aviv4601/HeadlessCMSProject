@@ -1,34 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Next.js 13 Headless CMS Blog
 
-## Getting Started
+This project is a headless CMS (WordPress) blog built with Next.js 13. It includes various features such as different routes, authentication (registration/login) platform, the capability to comment on posts, and search for a post by post's slug. The project's CSS is developed using Tailwind CSS, and OAuth is used for authentication.
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Before running the project, ensure you have the following installed:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Node.js
+- npm
+- WordPress instance running on port 8899 using Wamp/Mamp/other multiple services platform
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Clone the repository:
 
-## Learn More
+   `git clone https://github.com/yourusername/your-repository.git`
 
-To learn more about Next.js, take a look at the following resources:
+2. Navigate to the project directory:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   `cd your-repository`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+3. Install dependencies:
 
-## Deploy on Vercel
+   `npm install`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Configuration
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Open the .env file in the project root.
+
+2. Update the following configurations:
+
+   `WP_BASE_URL=http://localhost:8899/BlogsWebsite/BlogPosts/wp-json/wp/v2/`
+   `JWT_AUTH_URL=http://localhost:8899/BlogsWebsite/BlogPosts/wp-json/jwt-auth/v1/`
+   `AUTH_SECRET=your-auth-secret`
+   `NEXTAUTH_SECRET=your-next-auth-secret`
+
+Replace your-wordpress-site.com with the URL of your WordPress site and provide your OAuth client ID and client secret.
+
+### Running the Project:
+
+    `npm run start`
+
+The project will start, and you can access it at http://localhost:3000.
+
+### Usage
+
+- Navigate to different routes and explore the blog posts.
+- Register or log in using the authentication platform.
+- Comment on posts to engage with the content.
+- Utilize the search functionality to find posts by their slug.
+
+### Contributing
+
+Feel free to contribute to this project by submitting issues or pull requests.
