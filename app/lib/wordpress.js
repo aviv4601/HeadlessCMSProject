@@ -62,22 +62,22 @@ export async function getPosts() {
 }
 
 // getting 4 posts each time
-export async function getPostsByPage(pageNumber) {
-  try {
-    const response = await axios.get(`${BASE_URL}posts`, {
-      params: {
-        _sort: "date",
-        per_page: 4,
-        _order: "desc",
-        page: pageNumber,
-      },
-    });
-    return await response.data;
-  } catch (error) {
-    console.error(error);
-    throw new Error("Failed to fetch posts data.");
-  }
-}
+// export async function getPostsByPage(pageNumber) {
+//   try {
+//     const response = await axios.get(`${BASE_URL}posts`, {
+//       params: {
+//         _sort: "date",
+//         per_page: 4,
+//         _order: "desc",
+//         page: pageNumber,
+//       },
+//     });
+//     return await response.data;
+//   } catch (error) {
+//     console.error(error);
+//     throw new Error("Failed to fetch posts data.");
+//   }
+// }
 // export async function getPostsTitlesForSearchField(searchTerm) {
 //   try {
 //     const response = await axios.get(

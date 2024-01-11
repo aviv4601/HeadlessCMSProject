@@ -2,6 +2,10 @@
 
 This project is a headless CMS (WordPress) blog built with Next.js 13. It includes various features such as different routes, authentication (registration/login) platform, the capability to comment on posts, and search for a post by post's slug. The project's CSS is developed using Tailwind CSS, and OAuth is used for authentication. This app is responsive for any device.
 
+### Considerations
+
+The decision to build a headless CMS app was driven by the utilization of WordPress backend services, leveraging its database management capabilities, and addressing SEO considerations. This choice aims to establish a robust development process by harnessing the powerful features and functionalities provided by the WordPress backend services.
+
 ### Prerequisites
 
 Before running the project, ensure you have the following installed:

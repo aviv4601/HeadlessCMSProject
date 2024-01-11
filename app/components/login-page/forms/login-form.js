@@ -95,7 +95,7 @@ export default function LoginForm({ setIsLoginForm }) {
             onClick={switchToRegisterFormHandler}
             className="hover:underline cursor-pointer"
           >
-            Didn't signed up yet? click here to create an account
+            Didn&apos;t signed up yet? click here to create an account
           </p>
         </div>
         <Toaster />
