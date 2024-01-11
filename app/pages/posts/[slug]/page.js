@@ -31,7 +31,7 @@ export default async function PostPage({ params }) {
         <PostBody post={post} />
       </div>
       <div className="w-11/12 flex flex-col justify-center mx-auto align-center">
-        <CommentForm />
+        <CommentForm postId={post.id} />
         <div className="mt-8 xl:mx-28 lg:m-24">
           <h1 className="font-bold text-3xl mb-8">Comments</h1>
           {comments.map((comment) => (

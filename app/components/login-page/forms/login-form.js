@@ -5,7 +5,7 @@ import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import toast, { Toaster } from "react-hot-toast";
 
-export default function LoginForm() {
+export default function LoginForm({ setIsLoginForm }) {
   const router = useRouter();
 
   const formik = useFormik({
@@ -38,6 +38,10 @@ export default function LoginForm() {
       }
     },
   });
+
+  const switchToRegisterFormHandler = () => {
+    setIsLoginForm(false);
+  };
 
   return (
     <div className="md:flex md:justify-center">
@@ -85,6 +89,14 @@ export default function LoginForm() {
           <button className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
             Sign In
           </button>
+        </div>
+        <div className="text-center mt-4 text-gray-500">
+          <p
+            onClick={switchToRegisterFormHandler}
+            className="hover:underline cursor-pointer"
+          >
+            Didn't signed up yet? click here to create an account
+          </p>
         </div>
         <Toaster />
       </form>

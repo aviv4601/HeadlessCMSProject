@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import RandomImage from "../../assets/RandomImage.jpg";
 import { convertingDate } from "../../utils/functions";
-import Avatar from "../avatar";
+import Avatar from "../avatar/avatar";
 
 const MoreStories = ({ posts }) => {
   return (

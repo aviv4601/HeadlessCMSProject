@@ -1,6 +1,6 @@
 import { getPostsForHompage } from "./lib/wordpress";
-import HeroPost from "./components/homepagePosts/hero-post";
-import MoreStories from "./components/homepagePosts/more-stories";
+import HeroPost from "./components/homepage-posts/hero-post";
+import MoreStories from "./components/homepage-posts/more-stories";
 
 export default async function Home() {
   const posts = await getPostsForHompage();

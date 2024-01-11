@@ -1,4 +1,4 @@
-import LoginForm from "../../components/login-page/LoginForm";
+import Forms from "../../components/login-page/forms";
 import Image from "next/image";
 import LoginPageImg from "../../assets/LoginPageImg.jpg";
 
@@ -16,7 +16,7 @@ export default function Login() {
             />
           </div>
           <div className="lg:w-1/2 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
-            <LoginForm />
+            <Forms />
           </div>
         </div>
       </section>

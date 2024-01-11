@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { convertingDate } from "../../utils/functions";
-import Avatar from "../avatar";
+import Avatar from "../avatar/avatar";
 import CoverImage from "./cover-image";
 
 const HeroPost = ({ post }) => {

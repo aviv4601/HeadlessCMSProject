@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import SearchBar from "./sidelineContent/searchbar";
-import RecentPosts from "./sidelineContent/recent-posts";
-import Categories from "./sidelineContent/categories";
+import SearchBar from "./sideline-content/searchbar";
+import RecentPosts from "./sideline-content/recent-posts";
+import Categories from "./sideline-content/categories";
 
 const SidelineContent = ({ posts, categories }) => {
   return (

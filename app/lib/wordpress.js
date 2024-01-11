@@ -139,3 +139,34 @@ export async function getCommentsByPostId(id) {
     throw new Error("Failed to fetch comments by post id.");
   }
 }
+
+// this is a request that came from the browser - that's why we need to hard code the base url
+export async function addComment(req, postId) {
+  try {
+    const response = await axios.post(
+      `http://localhost:8899/BlogsWebsite/BlogPosts/wp-json/wp/v2/comments?post=${postId}`,
+      req.body,
+      {
+        headers: req.headers,
+      }
+    );
+    console.log("response", response);
+    return response;
+  } catch (error) {
+    throw new Error("Failed to add comment.");
+  }
+}
+
+export async function createWPAccount(req) {
+  try {
+    console.log("req", req);
+    const response = await axios.post(
+      `http://localhost:8899/BlogsWebsite/BlogPosts/wp-json/wp/v2/createuser`,
+      req
+    );
+    console.log("response", response);
+    return response;
+  } catch (error) {
+    throw new Error("Failed to create account.");
+  }
+}

@@ -1,12 +1,11 @@
-import Layout from "../../../../components/layout/layout";
 import {
   getPostsByCategory,
   getCategoryNameByCategoryId,
   getCategories,
   getPosts,
 } from "../../../../lib/wordpress";
-import PostsPreview from "../../../../components/allPostsPages/posts-preview";
-import SidelineContent from "../../../../components/allPostsPages/sideline";
+import PostsPreview from "../../../../components/all-posts-page/posts-preview";
+import SidelineContent from "../../../../components/all-posts-page/sideline";
 
 export default async function SortedByCategoryPage({ params }) {
   const categoryData = await getCategoryNameByCategoryId(params.categoryId);

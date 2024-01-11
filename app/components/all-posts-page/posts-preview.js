@@ -1,5 +1,5 @@
 import React from "react";
-import PostPreview from "./postPreview/post-preview";
+import PostPreview from "./post-preview/post-preview";
 import { Divider } from "@mui/material";
 
 const PostsPreview = ({ posts }) => {

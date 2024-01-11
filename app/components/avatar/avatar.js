@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { getAvatarByAuthorId } from "../lib/wordpress";
 import axios from "axios";
 import Image from "next/image";
 

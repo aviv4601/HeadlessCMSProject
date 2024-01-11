@@ -1,6 +1,6 @@
 import React from "react";
-import Avatar from "../avatar";
-import CoverImage from "../homepagePosts/cover-image";
+import Avatar from "../avatar/avatar";
+import CoverImage from "../homepage-posts/cover-image";
 import { convertingDate } from "../../utils/functions";
 
 const PostHeader = ({ post, category }) => {

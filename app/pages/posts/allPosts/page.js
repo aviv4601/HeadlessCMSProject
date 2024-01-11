@@ -1,5 +1,5 @@
-import PostsPreview from "../../../components/allPostsPages/posts-preview";
-import SidelineContent from "../../../components/allPostsPages/sideline";
+import PostsPreview from "../../../components/all-posts-page/posts-preview";
+import SidelineContent from "../../../components/all-posts-page/sideline";
 import {
   getCategories,
   getPosts,
