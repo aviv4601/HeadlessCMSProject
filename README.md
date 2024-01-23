@@ -39,7 +39,7 @@ Before running the project, ensure you have the following installed:
    `AUTH_SECRET=your-auth-secret`\
    `NEXTAUTH_SECRET=your-next-auth-secret`
 
-Replace your-wordpress-site.com with the URL of your WordPress site and provide your OAuth client ID and client secret.
+provide your OAuth client ID and client secret.
 
 ### Running the Project:
 
@@ -53,6 +53,17 @@ The project will start, and you can access it at http://localhost:3000.
 - Register or log in using the authentication platform.
 - Comment on posts to engage with the content.
 - Utilize the search functionality to find posts by their slug.
+
+### Lighthouse score:
+
+- Performance - 100
+- Accessibilty - 98
+- Best Practices - 100
+- SEO - 90
+
+### Showcase video
+
+https://www.youtube.com/watch?v=mLvQO2tGOn0
 
 ### Contributing
 
